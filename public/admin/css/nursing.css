@@ -1,0 +1,18 @@
+.nurse-visit-popup .grid-item label > input[type="checkbox"] {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px 0 0;
+    vertical-align: text-top;
+}
+
+.disabledClass {
+    pointer-events: none;
+    color: #ccc; 
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+.hidediv {
+    display: none;
+}

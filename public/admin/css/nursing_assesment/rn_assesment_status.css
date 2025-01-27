@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   /* appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none; */
+}
+
+
+body,
+html {
+   font-family: "Lato", sans-serif;
+   -webkit-text-size-adjust: none;
+   width: 100%;
+}
+
+a,
+button {
+   border: 0;
+   text-decoration: none !important;
+   outline: none !important;
+   cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h6,
+p,
+ul,
+li,
+figure {
+   margin: 0;
+   padding: 0;
+   line-height: normal;
+   font-weight: normal;
+}
+
+select {
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+}
+
+figure {
+   display: inline-block;
+   text-align: center;
+}
+
+ul,
+ol {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   list-style-type: none;
+}
+ol {
+   list-style-type: auto;
+}
+
+.row {
+   display: block;
+   width: 100%;
+   padding: 15px 0;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.anim {
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+body {
+   background: url(../images/body-bg-oval.svg) no-repeat center top;
+   background-size: 100% auto;
+}
+
+header {
+   display: flex;
+   display: -webkit-flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 15px 30px;
+   background: #fff;
+   -webkit-box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+   font-size: 24px;
+   text-shadow: 1px 2px 2px #c3c3c3;
+   text-align: center;
+}
+
+.logo-container {
+	text-align: center;
+	padding: 25px 0 15px;
+}
+
+.logo-container .logo {
+   display: inline-block;
+   margin: 0 auto;
+   width: 50%;
+   max-width: 225px;
+}
+
+.logo-container img {
+   display: block;
+   width: 100%;
+   height: auto;
+   margin: 0 auto;
+}
+
+.logo-container p {
+   color: #00355f;
+   font-weight:600;
+   font-size: 16px;
+   padding: 10px 10px 5px;
+   line-height: 150%;
+}
+
+.logo-container p span {
+   display: inline-block;
+   padding-right: 30px;
+}
+
+.content-container {
+	display: block;
+	width: 100%;
+	padding: 0 50px;
+	margin: 0 auto 30px;
+	max-width: 1260px;
+}
+
+.page-container {
+	display: block;
+	border: 1px solid #d6d6d6;
+	border-radius: 10px;
+	background: #fff;
+	padding: 25px;
+	/* min-height: 50vh; */
+	-webkit-box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 10%);
+	box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.page-container section {
+	display: block;
+	border: 1px solid #d6d6d6;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.page-container section:last-child {
+   margin-bottom: 0;
+}
+
+.page-container section .title {
+	display: block;
+	font-size: 20px;
+	color: #19548c;
+	font-style: italic;
+	border-bottom: 4px double #5fd7ff;
+	margin-bottom: 15px;
+	padding: 0 120px 10px 0;
+}
+
+.page-container section p {
+   display: block;
+   padding: 15px 0;
+}
+
+.grid-row {
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	width: 100%;
+}
+
+.grid-item {
+	position: relative;
+}
+
+.details {
+   padding-bottom: 25px;
+}
+
+.details .grid-item {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: flex-start;
+   align-items: center;
+   grid-gap: 10px;
+}
+
+
+.signature {
+   display: block;
+   width: 100%;
+   text-align: center;
+   margin-top: 25px;
+   border: 1px solid #ddd;
+}
+
+.signature > div {
+   display: block;
+   width: 100%;
+   text-align: center;
+   padding: 15px 0;	
+}
+
+.signature > div a.sign-icon {
+   display: inline-block;
+}
+
+.signature > div a.sign-icon span {
+   display: block;
+   padding-bottom: 15px
+}
+
+.signature a.sign-icon img {
+	display: inline;
+	width: 25px;
+	height: auto;
+}
+
+.signature > div figure {
+   display: block;
+   width: 250px;
+   margin: 0 auto;
+}
+
+.signature > div figure img {
+   display: block;
+   width: 250px;
+   height: auto;
+}
+
+.from-btns {
+   display: flex;
+   width: 100%;
+   text-align: center;
+   padding: 25px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+
+.from-btns .btn {
+   display: inline-block;
+   background: #56a2e8;
+   color: #FFF;
+   min-width: 100px;
+   width: max-content;
+   padding: 10px;
+   font-weight: bold;
+   font-size: 16px;
+   cursor: pointer;
+   border: 0;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.from-btns .btn:hover {
+   background: #0073de;
+}
+
+footer {
+   display: flex;
+   display: -webkit-flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 60px;
+   padding: 30px;
+   gap: 10px;
+}
+
+footer div:first-child {
+   text-align: left;
+}
+footer div:last-child {
+   text-align: right;
+}
+
+footer span {
+   display: inline-block;
+   padding-right: 10px;
+}
+
+
+/* Media Query CSS */
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 770px) {
+
+}
+
+@media screen and (max-width: 640px) {
+
+   .content-container {
+      padding: 0 15px;
+   }
+   .page-container {
+      padding: 30px 15px;
+   }
+   .page-container section {
+      padding: 15px;
+   }
+   .logo-container p span {
+      display: block;
+      padding-right: 0;
+   }
+   
+}
+
+.animation-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    /* Center the animation */
+}
+
+.gimbal-loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 100%;
+    color: #FFF;
+    z-index: 10;
+}
+
+.gimbal-loader .loader-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+.confirmation-popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999999;
+    display: none;
+    overflow: auto;
+}
+
+.confirmation-popup .confirmation-box-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.confirmation-popup .confirmation-box-container .confirmation-box {
+    display: block;
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.26);
+    z-index: 9999;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.confirmation-popup .confirmation-box-container .confirmation-box .confirm-msg {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 10px 30px;
+    font-weight: 500;
+}
+
+.confirmation-popup .confirmation-box-container .confirmation-box .note-msg {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 10px 30px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.confirmation-popup .confirmation-box-container .confirmation-box .btn-row {
+    display: block;
+    text-align: center;
+}
+
+.confirmation-popup .confirmation-box-container .confirmation-box {
+    max-width: 400px;
+    padding: 10px 0 25px;
+}
+
+.confirmation-popup .confirmation-box-container .confirmation-box .confirm-msg {
+    padding: 5px 10px 15px;
+}
+
+.confirmation-popup .confirmation-box-container .confirmation-box .btn-row {
+    padding: 0;
+}

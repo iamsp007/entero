@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 448" xmlns:v="https://vecta.io/nano"><path d="M400 0H48C21.5 0 0 21.5 0 48v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48z"/><path d="M161.1 319.9V128.1h52.1V278h73.6v41.8l-125.7.1h0z" fill="#fff"/></svg>

@@ -1,0 +1,731 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   font-family: "Lato", sans-serif;
+   /* appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none; */
+}
+
+body,
+html {
+   -webkit-text-size-adjust: none;
+   width: 100%;
+   height: 100%;
+}
+
+a,
+button,
+label {
+   border: 0;
+   text-decoration: none !important;
+   outline: none !important;
+   cursor: pointer;
+}
+
+.row {
+   display: block;
+   padding: 15px 0;
+}
+
+.anim {
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="month"],
+input[type="file"],
+select {
+   display: inline-block;
+   width: 100%;
+   max-width: 400px;
+   height: 40px;
+   padding: 5px 10px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 40px;
+   color: #333;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #d1d1d1;
+   border-radius: 5px;
+   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type="file"] {
+   line-height: 1.5;
+}
+
+input:disabled {
+   background: #e9ecef;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="month"]:focus,
+select:focus {
+   color: #000;
+   border-color: #80bdff;
+   outline: 0;
+   box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+   display: none;
+}
+
+.login {
+   display: block;
+   position: relative;
+   min-height: 100vh;
+}
+
+.login .login-box {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -75%);
+   width: 100%;
+   background: #fff;
+   color: #000;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+}
+
+.login .login-box .logo {
+   display: block;
+   width: 250px;
+   height: auto;
+   margin: 0 auto 25px;
+}
+
+.flex-container {
+   display: flex;
+   display: -webkit-flex;
+   width: 90%;
+   max-width: 1040px;
+   margin: 0 auto;
+   gap: 0px;
+   box-shadow: 0 0 0 10px #1d345f;
+   -webkit-box-shadow: 0 0 0 10px #1d345f;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   height: 430px;
+   overflow: hidden;
+}
+
+.flex-container > div,
+.flex-container > form {
+   width: 100%;
+
+}
+
+.flex-container .illustration-container {
+   display: flex;
+   display: -webkit-flex;
+   background: #055a93;
+   align-items:center;
+   justify-content:center;
+   align-content: center;
+}
+
+.flex-container .illustration-container img {
+   width: 90%;
+}
+
+.flex-container .form-container {
+   display: flex;
+   display: -webkit-flex;
+   align-items:flex-start;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+   background: #ffffff; /* Old browsers */
+   background: -moz-linear-gradient(
+      top,
+      #ffffff 0%,
+      #f2f2f2 100%
+   ); /* FF3.6-15 */
+   background: -webkit-linear-gradient(
+      top,
+      #ffffff 0%,
+      #f2f2f2 100%
+   ); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #f2f2f2 100%
+   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+}
+
+.flex-container .form-container form {
+   width: 100%;
+}
+
+.login .login-box .login-form {
+   display: block;
+   width: 100%;
+   padding: 45px;
+   min-height: 430px;
+   /* border: 1px solid #dadada;
+   border-radius: 20px;
+   -wekkit-border-radius: 20px; */
+}
+
+.login .login-box h1 {
+   display: block;
+   font-size: 30px;
+   font-weight: 400;
+   color: #1e3e6a;
+   padding-bottom: 5px;
+}
+
+.login .login-box .login-form p {
+   display: block;
+   font-size: 16px;
+   color: #ff8326;
+   padding-bottom: 10px;
+}
+
+.login .login-box .login-form input[type="text"],
+.login .login-box .login-form input[type="email"],
+.login .login-box .login-form input[type="password"] {
+   border: 1px solid #d1d1d1;
+   border-radius: 25px;
+   -webkit-box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.05);
+   box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.05);
+   margin: 8px 0;
+   padding-left: 50px;
+   max-width: 100%;
+}
+
+.input-field-container {
+   display: block;
+   position: relative;
+}
+
+.input-field-container svg {
+   position: absolute;
+   width: 16px;
+   height: auto;
+   top: 18px;
+   left: 20px;
+   z-index: 9;
+}
+
+.login .login-box .login-form label {
+   display: block;
+   position: relative;
+   padding: 3px 0 0 30px;
+   cursor: pointer;
+}
+
+.login .login-box .login-form .form-check-label:before {
+   content: "";
+   position: absolute;
+   top: 2px;
+   left: 0;
+   height: 20px;
+   width: 20px;
+   border: 1px solid #93accb;
+   z-index: 99;
+   padding-left: 0;
+}
+
+.login .login-box .login-form input:checked + .form-check-label:before {
+   background: #f58534;
+   border-color: #f58534;
+}
+
+.login .login-box .login-form input:checked + label:after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 5px;
+   left: 7px;
+   width: 5px;
+   height: 10px;
+   border: solid #fff;
+   border-width: 0 3px 3px 0;
+   transform: rotate(45deg);
+   z-index: 999;
+}
+
+.login .login-box button {
+   display: block;
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   font-size: 16px;
+   color: #fff;
+   background: #1d345f;
+   border-radius: 50px;
+   -webkit-border-radius: 50px;
+   margin-top: 10px;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.login .login-box button:hover {
+   background: #f58534;
+   letter-spacing: 1px;
+}
+
+.login footer {
+   display: block;
+   width: 100%;
+   height: 40px;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   font-size: 14px;
+   text-align: center;
+   color: #fff;
+   line-height: 40px;
+   padding: 0;
+   min-height: 40px;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e3e6a+0,035c96+100 */
+   background: #1e3e6a; /* Old browsers */
+   background: -moz-linear-gradient(
+      left,
+      #1e3e6a 0%,
+      #035c96 100%
+   ); /* FF3.6-15 */
+   background: -webkit-linear-gradient(
+      left,
+      #1e3e6a 0%,
+      #035c96 100%
+   ); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(
+      to right,
+      #1e3e6a 0%,
+      #035c96 100%
+   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3e6a', endColorstr='#035c96',GradientType=1 ); /* IE6-9 */
+}
+
+
+.two-step-verification-container {
+   display: none;
+   width: 100%;
+   padding: 45px;
+   min-height: 430px;
+}
+
+.two-step-verification-container .center-align {
+   text-align: center;
+} 
+
+.two-step-verification-container p {
+   font-size: 16px;
+   padding: 7px 0;
+   line-height: 25px;
+}
+
+.two-step-verification-container label {
+   display: inline-flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 5px;
+   margin-right: 25px;
+   font-size: 18px;
+}
+
+.two-step-verification-container input[type="radio"] {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+}
+
+.two-step-verification-container .otp-container span {
+   display: block;
+   text-align: center;
+   padding-bottom: 10px;
+}
+
+.two-step-verification-container .otp-container .otp-input {
+   display: flex;
+   display: -webkit-flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding: 10px 0;
+}
+
+.two-step-verification-container .otp-container .otp-input input {
+   width: 40px !important;
+   height: 40px;
+   margin: 0 5px;
+   text-align: center;
+   font-size: 1.2rem;
+   border: 1px solid #ff8000;
+   background-color: #FFF;
+   color: #000;
+   border-radius: 4px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px;
+}
+.two-step-verification-container .otp-container .otp-input input::-webkit-outer-spin-button,
+.two-step-verification-container .otp-container .otp-input input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+.two-step-verification-container .otp-container .otp-input input[type=number] {
+   -moz-appearance: textfield;
+}
+.two-step-verification-container .btn-row {
+   display: flex;
+   display: -webkit-flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding: 0;
+}
+
+.two-step-verification-container .btn-row .btn {
+   display: inline-block;
+   color: #fff;
+   text-align: center;
+   vertical-align: middle;
+   padding: 8px 15px;
+   border: 0;
+   border-radius: 5px;
+   font-size: 16px;
+   margin-left: 5px;
+   line-height: 1;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+   opacity: 1;
+   font-weight: normal;
+}
+
+.two-step-verification-container .btn-row .btn-blue {
+   background-color: #035c96;
+   color: #FFF !important;
+}
+
+.two-step-verification-container #otperrorMessages {
+   display: none;
+   text-align: center;
+   color: #ff6c00;
+   padding: 10px;
+   font-size: 18px;
+   font-weight: 400;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+   background-color: #ffffff !important;
+   color: #555 !important;
+   -webkit-box-shadow: 0 0 0 1000px white inset !important;
+   -webkit-text-fill-color: #555555 !important;
+}
+
+.invalid-feedback {
+   display: block;
+   width: 100%;
+   text-align: center;
+   color: red;
+   max-width: 400px;
+}
+
+.success-message, .error-message {
+   display: block;
+   top: 70px;
+   right: 20px;
+   border-radius: 5px;
+   padding: 12px 30px 15px 20px;
+   z-index: 9999;
+   color: #fff;
+   font-size: 14px;
+}
+
+.success-message:before, .error-message:before {
+   color: #fff;
+   font-size: 18px;
+   margin-right: 5px;
+}
+
+.success-message .success-message-close, .error-message .error-message-close {
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   z-index: 999;
+   width: 20px;
+   text-align: center;
+}
+
+   .error-message {
+      background: #d40f0f;
+   }
+
+.error-message:before {
+   content: " \2718";
+}
+
+.success-message {
+   background: #26a100;
+}
+
+.success-message:before {
+   content: " \2714";
+}
+
+.is-invalid {
+   border-color: red !important;
+}
+
+.loader {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   display: none;
+   background-color: rgba(0,0,0,0.5);
+   z-index: 9999999999;
+}
+
+.loader img {
+   display: block;
+   width: 200px;
+   height: 200px;
+   margin: calc((100vh - 200px)/2) auto;
+}
+
+input.error {
+   border: 1px solid red !important;
+}
+
+label.error {
+   margin: 0;
+   padding: 5px 0;
+   color: red;
+}
+
+.pass-show {
+   display: none!important;
+}
+
+span.view-password {
+   position: absolute;
+   right: 15px;
+   top: 17px;
+   cursor: pointer;
+}
+
+.d-block {
+   display: block!important;
+}
+
+.d-none {
+   display: none!important;
+}
+
+.loader lottie-player {
+	width: 300px;
+	height: 300px;
+	border: 0 !important;
+	position: absolute;
+	top: calc(50% - 150px);
+	left: calc(50% - 150px);
+} 
+
+
+.grid-row {
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+   width: 100%;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+   position: relative;
+}
+
+.grid-item {
+   display: block;
+   position: relative;
+}
+
+
+/* Delete Account Page CSS */
+
+.delete-account {
+   display: block;
+   padding-bottom: 60px;
+}
+
+.delete-account .logo {
+   display: block;
+   width: 250px;
+   height: auto;
+   margin: 0 auto 25px;
+}
+
+.delete-account .profile-details {
+      display: block;
+      width: 90%;
+      max-width: 500px;
+      padding: 25px;
+      margin: 0 auto;
+      box-shadow: 0 0 0 3px #1d345f;
+      -webkit-box-shadow: 0 0 0 3px #1d345f;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+}
+
+.delete-account .profile-details .user-pic {
+   display: block;
+   width: 80px;
+   height: 80px;
+   border-radius: 100%;
+   background: #fff;
+   overflow: hidden;
+   text-align: center;
+   vertical-align: top;
+   margin: 0 0 20px;
+   border: 3px double #5fd7ff;
+}
+
+.delete-account .profile-details .user-pic img {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+.delete-account .profile-details .grid-item {
+   display: flex;
+   display: -webkit-flex;
+   width: 100%;
+   justify-content: flex-start;
+   align-items: flex-start;   
+   gap: 10px;
+   border-bottom: 1px solid #aaa;
+   padding-bottom: 10px;
+}
+
+
+.delete-account .profile-details .grid-item label {
+   min-width: 100px;
+   font-weight: bold;
+   font-size: 15px;
+   color: #035c96;
+   position: relative;
+   padding-right: 10px;
+}
+
+.delete-account .profile-details .grid-item label:after {
+   content: ":";
+   position: absolute;
+   right: 0;
+   top: 2px;
+   line-height: 15px;
+}
+
+.delete-account .profile-details .grid-item span {
+   font-size: 15px;
+   padding-left: 5px;
+}
+
+.delete-account .profile-details .delete-account-btn {
+   display: block;
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   font-size: 16px;
+   color: #fff;
+   background: #1d345f;
+   border-radius: 50px;
+   -webkit-border-radius: 50px;
+   margin-top: 20px;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.delete-account .profile-details .delete-account-btn:hover {
+   background: #f58534;
+   letter-spacing: 1px;
+}
+
+/* Media Query CSS */
+
+@media screen and (max-width: 767px) {
+
+   .login .login-box {
+      display: block;
+      position: relative;
+      padding-top: 15px;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+   }
+
+   .flex-container {
+      width: 80%;
+      height: auto;
+   }
+
+   .flex-container .illustration-container {
+      display: none;
+   }
+
+   .login .login-box .login-form {
+      padding: 25px;
+   }
+
+   span.view-password {
+      right: 20px;
+   }
+
+}
+
+@media screen and (max-width: 360px) {
+
+   .flex-container {
+      width: 88%;
+   }
+   .flex-container .form-container {
+      align-items: flex-start;
+   }
+} 

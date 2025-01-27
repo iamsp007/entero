@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" xmlns:v="https://vecta.io/nano"><path fill-rule="evenodd" fill="#fff" d="M7 .86c3.85 0 7 2.37 7 5.29 0 1.76-1.22 3.35-3.09 4.35h.06c0 .77.55 1.65.83 2.09v.17a.42.42 0 0 1-.39.39h-.11c-1.38-.22-2.64-1.49-2.92-1.87L7 11.37c-3.86 0-7-2.36-7-5.22C0 3.23 3.14.86 7 .86h0z"></path></svg>

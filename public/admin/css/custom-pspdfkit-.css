@@ -1,0 +1,26 @@
+.PSPDFKit-Toolbar {
+    background-color: #D5C0FF;
+}
+
+.PSPDFKit-Toolbar-Button-Icon {
+    color: #000;
+}
+
+.PSPDFKit-Toolbar-Button {
+    color: #3A2369;
+}
+
+.PSPDFKit-Toolbar-Button:hover, .PSPDFKit-Toolbar-Button:focus, .PSPDFKit-Toolbar-Button:active,
+.PSPDFKit-Toolbar-Button-active {
+    background: #D5C0FF!important;
+    filter: brightness(.85);
+}
+
+.PSPDFKit-Form-Creator-Toolbar {
+    background-color: #fcfcfc;
+    filter: brightness(.85);
+}
+
+/* .PSPDFKit-Annotation input {
+    background: #D5C0FF!important;
+} */

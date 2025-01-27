@@ -1,0 +1,309 @@
+.page-container section h3 {
+   padding: 7px 0 20px;
+}
+
+.grid-row {
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: 1fr;
+   width: 100%;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+   position: relative;
+   padding-top: 10px;
+}
+
+.grid-item {
+   display: flex;
+	display: -webkit-flex;
+   flex-direction: row;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 10px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+   position: relative;
+}
+
+.grid-item:last-child {
+   border: 0;
+}
+
+.grid-item label {
+	flex-basis: 175px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #035c96;
+	position: relative;
+	padding: 5px 10px 0 0;
+}
+
+.grid-item label:after {
+	content: ":";
+	position: absolute;
+	right: 0;
+	top: 8px;
+	line-height: 15px;
+}
+
+.required-field {
+   position: absolute;
+   width: auto !important;
+   display: inline-block !important;
+}
+
+.grid-item span {
+	font-size: 15px;
+	padding: 0 0 0 5px;
+   width: 100%;
+}
+
+.grid-item input[type="radio"],
+.grid-item input[type="checkbox"] {
+   display: inline-block;
+}
+
+input[type="time"] {
+   max-width: 150px;
+}
+
+.half-container {
+   gap: 25px;
+}
+
+.section-title {
+   display: flex;
+   display: -webkit-flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+   align-content: center;
+   font-size: 17px;
+   color: #19548c;
+   font-style: italic;
+   border-bottom: 0px double #abeaff;
+   margin-bottom: 10px;
+   padding: 5px 0;
+   position: relative;
+   font-weight: bold;
+}
+
+.radio-checkbox .checkbox,
+.radio-checkbox .radio {
+   padding: 0 20px 3px 40px;
+}
+
+.radio-checkbox label {
+   color: #000;
+}
+
+.radio-checkbox label::after {
+   display: none;
+}
+
+.radio-checkbox.readonly input,
+.radio-checkbox.readonly label {
+   pointer-events: none;
+}
+
+#logo_container {
+   display: none;
+   padding: 15px;
+   border: 1px solid #aaa;
+   margin: 10px 0;
+   width: 150px;
+   height: auto;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+#logo_container img {
+   display: block;
+   width: 100%;
+   height: auto;
+   max-height: 150px;
+}
+
+.import-day-time-container {
+   display: block;
+}
+
+.import-day-time-container ul li {
+   display: inline-block;
+   padding-right: 10px;
+   width: 40%;
+}
+
+.text-message-options ul li {
+   padding-bottom: 15px;
+}
+
+.text-message-options ul li .radio-checkbox {
+     margin: 0 15px 5px 0;
+}
+
+.send-message-spanish,
+.send-message-chinese {
+   display: none;
+}
+
+.offices-container {
+   display: flex;
+	display: -webkit-flex;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;
+   flex-wrap: wrap;
+	gap: 20px;
+   width: 100%;
+}
+
+.offices-container li {
+   width: 417px;
+   padding: 5px 15px;
+   background: #f6f6f6;
+   border: 1px solid #d5d5d5;
+   border-radius: 10px;
+   position: relative;
+}  
+
+.offices-container li .delete-office {
+   position: absolute;
+   top: -15px;
+   right: 15px;
+   z-index: 1;
+   background: #ff0000;
+   color: #FFF;
+   width: 26px;
+   height: 26px;
+   text-align: center;
+   line-height: 26px;
+   font-size: 12px;
+   border-radius: 100%;
+   -webkit-border-radius: 100%;
+   -moz-border-radius: 100%;
+   -ms-border-radius: 100%;
+   -o-border-radius: 100%;
+}
+
+.offices-container li .delete-office:hover {
+   background: #b90000;
+}
+
+.offices-container .grid-item {
+   padding-bottom: 5px;
+}
+
+.offices-container .grid-item label {
+   flex-basis: 140px;
+}
+
+.offices-container .radio-checkbox {
+   margin: 0 10px 0 0;
+}
+
+.offices-container .radio-checkbox label {
+   min-width: 90px;
+}
+
+.poc-task .grid-row {
+   width: 355px;
+}
+
+.poc-task .grid-item label {
+   flex-basis: 250px;
+}
+
+.poc-task .grid-item select {
+   flex-basis: 80px;
+}
+
+.poc-task .grid-item label::after {
+   display: none;
+}
+
+.btn-row {
+   text-align: center;
+}
+
+input.error {
+   border: 1px solid #ff0000 !important;
+}
+
+label.error {
+   display: block;
+   color: #ff0000;
+   font-weight: 400 !important;
+   margin-top: 3px;
+   padding: 0 !important;
+}
+label.error::after {
+   display: none !important;
+}
+
+/* Media Query CSS */
+
+@media screen and (max-width: 767px) {
+
+   .half-container {
+      gap: 10px;
+   }
+
+   .grid-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+   }
+
+   .grid-item label,
+   .offices-container .grid-item label,
+   .poc-task .grid-item label,
+   .poc-task .grid-item select {
+      flex-basis: unset;
+   }
+
+   .grid-item label:after {
+      display: none;
+   }
+
+   .grid-item span {
+      padding: 0;
+   }
+
+   .import-day-time-container ul li {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      gap: 5px;
+      padding: 0 0 10px 0;
+   }
+
+   .import-day-time-container ul li .radio-checkbox {
+      margin: 0 15px 0 0;
+   }
+
+   .poc-task .grid-row {
+      width: 100%;
+   }
+
+   .poc-task .grid-item label {
+      margin-bottom: 10px;
+   }
+
+   .poc-task .grid-item select {
+      width: 30% !important;
+   }
+
+   
+
+}

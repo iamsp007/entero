@@ -1,0 +1,55 @@
+
+header .header-right * + * {
+   margin-left: 10px;
+}
+
+.ourClients .flex * + * {
+   margin-left: 20px;
+}
+
+.dashboard .grid-gap-10 * + * {
+   margin-left: 10px;
+   margin-bottom: 10px;
+}
+
+.we-serve > * + *,
+.products > * + * {
+   margin-left: 30px;
+}
+
+.svg-icon-container * + * {
+   margin: 0 0 5px 0;
+}
+
+.svg-icon-container > * + * {
+   margin: 0 0 0 5px;
+}
+
+.half-container > * + * {
+   margin: 0 0 0 50px;
+}
+
+.flex-row > * + * {
+   margin: 0 0 0 20px;
+}
+
+.grid-row .grid-item.flex > * + * {
+   margin: 0 0 0 10px;
+}
+
+.affidavit-information .grid-row .grid-item.flex .right-btns > * + * {
+   margin: 0 0 0 10px;
+}
+
+.permissions-table-container .permissions-table .checkbox input[type="checkbox"] {
+   margin-right: 5px;
+}
+
+.vertical-right-content-container .icons > * + * {
+   margin: 0 0 0 10px;
+} 
+
+.vertical-right-content-container .icons a span {
+   min-width: 35px;
+}
+

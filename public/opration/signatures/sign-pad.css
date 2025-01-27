@@ -1,0 +1,56 @@
+.sign-pad-container {
+   display: grid;
+   grid-gap: 5px;
+   grid-template-columns: 1fr 32px;
+   position: relative;
+   font-size: 10px;
+   width: 100%;
+   height: 100%;
+   max-width: 300px;
+   background: #00355f;
+   padding: 5px 1px 5px 5px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+.sign-pad {
+   border: 1px solid #ccc;
+   background-color: #FFF;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+.sign-pad-buttons {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap: 8px;
+   padding: 4px 0;
+}
+.sign-pad-buttons > button,
+.sign-pad-buttons > a {
+   font-size: 14px;
+   padding: 0 6px;
+   width: 26px;
+   height: 24px;
+   line-height: 23px !important;
+   background: #56a2e8;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   border: 0;
+   color: #FFF;
+}
+
+@media screen and (max-width: 640px) {
+   .sign-pad {
+      width: 100%;
+      height: 63px;
+   }
+}

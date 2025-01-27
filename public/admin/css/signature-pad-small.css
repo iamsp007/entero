@@ -1,0 +1,131 @@
+.signature_sections {
+   display: block;
+   border: 0 !important;
+   padding: 10px 0 !important;
+   width: 373px;
+}
+
+.signature_sections > a {
+   display: block;
+   margin: 0 auto 10px;
+   width: 30px;
+}
+
+.signature-pad {
+   display: block;
+   width: 100%;
+   max-width: 300px;
+   margin:0;
+   padding: 5px;
+   background: #00355f;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.signature-pad--container {
+   display: grid;
+   grid-gap: 0px;
+   grid-template-columns: 1fr 32px;
+   position: relative;
+   font-size: 10px;
+   width: 100%;
+   height: 100%;
+   max-width: 300px;
+}
+
+.signature-pad--body {
+   position: relative;
+   width: 100%;
+   height: 60px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.signature-pad--body canvas {
+   display: block;
+   width: 100%;
+   height: 100%;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.signature-pad--footer {
+   color: #c3c3c3;
+   text-align: center;
+   font-size: 1.2em;
+   padding: 0;
+   margin: 0;
+}
+
+.signature-pad--actions {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap: 5px;
+   padding: 3px 0;
+   margin: 0;
+}
+
+.signature-pad--actions > button {
+   font-size: 14px;
+   padding: 0 6px;
+   width: 26px;
+   height: 24px;
+   line-height: 23px !important;
+   background: #FFF;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+
+.signature_sections:has(.signature-pad--body) {
+   width: 100%;
+}
+
+.signature-pad-big {
+   max-width: 100%;
+}
+
+.signature-pad-big .signature-pad--body {
+   height: 300px;
+}
+
+.signature-pad-big .signature-pad--actions {
+   flex-direction: row;
+   padding: 10px 0 5px;
+}
+
+.signature-pad-big .signature-pad--actions > button {
+   width: auto;
+   padding: 0 10px;
+}
+
+
+@media screen and (max-width: 770px) {
+
+   .signature_sections {
+      width: 100%;
+   }
+
+   .signature-pad,
+   .signature-pad--container {
+      max-width: 100%;
+   }
+
+   .signature-pad-big .signature-pad--body {
+      height: 60px;
+   }
+}

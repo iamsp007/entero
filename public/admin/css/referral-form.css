@@ -1,0 +1,64 @@
+header {
+   justify-content: space-between;
+}
+
+header > div {
+   text-align: center;
+}
+
+header .logo {
+   text-align: left;
+}
+
+header .forHide {
+   text-align: right;
+}
+
+.content-container {
+   padding: 50px;
+}
+
+.error {
+   color: red;
+}
+
+@media screen and (max-width: 770px) {
+   header > div {
+      min-width: auto;
+   }
+}
+
+
+@media screen and (max-width: 640px) {
+
+   header {
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   header > div {
+      min-width: 100%;
+      text-align: center !important;
+   }
+
+   header .forHide {
+      text-align: center !important;
+   }
+
+   header > div h1 {
+      font-size: 4vw;
+      padding-bottom: 5px;
+   }
+
+   header > div br {
+      display: none;
+   }
+
+   header > div h2 {
+      padding-top: 10px;
+   }
+
+   .content-container {
+      padding: 20px;
+   }   
+}

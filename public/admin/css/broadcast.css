@@ -1,0 +1,359 @@
+
+.broadcast-popup {
+    max-width: 1000px;
+    overflow: unset;
+ }
+
+ .broadcast-popup hr {
+   margin: 10px 0;
+ }
+ 
+ .broadcast-popup .patient-details {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background: #000;
+    padding: 10px 10px;
+    color: #FFF;
+    opacity: 0;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+ 
+ }
+ 
+ .broadcast-popup .patient-details.open {
+    top: -80px; 
+    opacity: 1; 
+ }
+ 
+ .broadcast-popup .patient-details table tr {
+    background-color: #000 !important;
+ }
+ 
+ .broadcast-popup .patient-details table tr td label {
+    display: inline-block;
+    padding-right: 10px;
+ } 
+ 
+ .broadcast-popup fieldset {
+    background-color: #e4f7ff;
+    border: 4px double #f58534;
+ }
+ 
+ .broadcast-popup fieldset legend {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: #FFF;
+    padding: 5px 15px 5px;
+    background: #035c96;
+    border: 1px solid #000;
+    margin-bottom: 0;
+ }
+
+
+ .broadcast-popup .single-row .edit-patient {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding-bottom: 10px;
+ }
+
+ .broadcast-popup .single-row:has(.select-patient, .edit-patient) {
+   text-align: left;
+   background: #ecd2ff;
+   padding: 5px 10px 10px;
+ }
+
+ .broadcast-popup .single-row:has(.select-patient, .edit-patient) select {
+   width: fit-content;
+   padding-right: 30px;
+ }
+
+ .patient-detailsDiv hr {
+   margin: 5px 0;
+ } 
+
+.broadcast-popup fieldset .patient-details-row {
+   padding-bottom: 10px;
+ }
+
+ .broadcast-popup fieldset .patient-details-row .grid-item {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 10px;
+ }
+
+ .broadcast-popup fieldset .patient-details-row .grid-item > label {
+   margin: 0;
+   width: max-content;
+ }
+
+ .broadcast-popup fieldset .assessment-type {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 10px;
+   margin-left: 15px;
+ }
+
+ .broadcast-popup fieldset .assessment-type label {
+   width: max-content;
+ }
+ 
+ .broadcast-popup fieldset .assessment-type select {
+   width: fit-content;
+   padding-right: 30px;
+ }
+ 
+ .broadcast-popup .select-patient {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 10px;
+ }
+
+ .broadcast-popup .select-patient .search-box input {
+   width: 250px;
+   background-color: #FFF;
+ }
+ 
+ .broadcast-popup .select-patient .search-box ul li {
+   text-align: left;
+ }
+
+ .broadcast-popup .select-patient label {
+    display: inline-block;
+    width: fit-content;
+    padding-right: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+ }
+
+
+.broadcast-popup .edit-patient label {
+   display: inline-block;
+   width: fit-content;
+   padding-right: 10px;
+   font-size: 17px;
+   font-weight: bold;
+   color: #000;
+}
+ 
+ .broadcast-popup h3 {
+    display: block;
+    font-size: 16px;
+    color: #1b6ec2;
+    font-weight: bold;
+    padding: 10px 0 15px;
+ }
+ 
+ .broadcast-popup .rn-search-section {
+    padding-bottom: 20px;
+ }
+ 
+ .broadcast-popup .rn-search-section input[type="text"] {
+    height: 36px;
+    line-height: 36px;
+    max-width: 100%;
+    font-size: 18px;
+    text-align: left;
+ }
+ 
+ .broadcast-popup .rn-search-section ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    border: 1px solid #d1d1d1;
+    max-height: 380px;
+    overflow: auto;
+    padding: 5px;
+    margin-top: 1px;
+    background-color: #FFF;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+ }
+ 
+ .broadcast-popup .rn-search-section ul li {
+    display: block;
+    padding: 10px 40px 10px 10px;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+ }
+ 
+ .broadcast-popup .rn-search-section ul li:hover {
+    background-color: #f2f9ff;
+ }
+ 
+ .broadcast-popup .rn-search-section ul li::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    z-index: 9;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aaa;
+ }
+ 
+ .broadcast-popup .rn-search-section ul li.active {
+    background-color: #d4f3d2;
+ }
+ 
+ .broadcast-popup .rn-search-section ul li.active::before {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T6WT0RWDMAhFeZs4ipu0mawZpaO4yevBc6hUIWLNd+4NeQDk5sE/PMkZwFvZywKSTxF5iUgH0C4JHGyF97IggFVSqyCFga0CvQSg70Mdwd8QSSr4sGBMcgavAgdvwQCtApvA2uKr1x7Pu++06ItrF5LXPB/CP4M0kKTwYRIDyRAOR9lJTuF0F0hOAJbKopVHOZN9ACS0UgowIx8ZAAAAAElFTkSuQmCC")
+    no-repeat 5px center #035c96;
+    background-size: 14px;
+    background-position: center;
+    border: 1px solid #035c96;
+ } 
+ 
+ .broadcast-popup .rn_datepicker {
+    display: none;
+ }
+ 
+ .broadcast-popup .ui-datepicker {
+    width: 100%;
+ }
+ 
+ .broadcast-popup .time-slots-container {
+    display: none;
+    padding: 10px 0 20px;
+ }
+ 
+ .broadcast-popup .time-slots-container .time-slots {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    background: #FFF;
+    max-height: 121px;
+    overflow: auto;
+    padding: 1px 0 0;
+  }
+  
+  .broadcast-popup .time-slots-container .time-slots li {
+    display: block;
+    border: 1px solid #aaa; 
+    margin: 0;
+    padding: 10px;
+    margin-top: -1px;
+  }
+ 
+  .broadcast-popup .time-slots-container .time-slots li:nth-child(even) {
+    margin-left: -1px;
+  }
+ 
+ .broadcast-popup .time-slots-container label {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 16px;
+ }
+ 
+ .broadcast-popup .time-slots-container label input[type="radio"],
+ .broadcast-popup .time-slots-container label input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+ }
+ 
+ .broadcast-popup .google-map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    padding: 15px;
+    display: none;
+ } 
+ 
+ .broadcast-popup .google-map-container .google-map-container-close {
+    display: inline-flex;
+    background: rgb(255, 255, 255); 
+    width: 40px; 
+    height: 40px; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    position: absolute;
+    top: 24px;
+    right: 25px;
+    z-index: 99;
+ }
+ 
+ .broadcast-popup .google-map-container .google-map-container-close svg {
+    width: 16px;
+    height: 16px;
+    fill: #666666;
+ }
+ 
+ .broadcast-popup .google-map-container #map {
+    display: block; 
+    width: 100%; 
+    height: 100%;
+ }
+ 
+ .broadcast-popup .google-map-container .btn {
+    display: inline-block;   
+    height: 40px;
+    line-height: 38px !important;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    z-index: 9;
+ }
+ 
+ .broadcast-popup .google-map-container .broadcast-deadline {
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 170px);
+    z-index: 99;
+    width: 340px;
+    display: flex;
+    display: -webkit-flex;
+    height: 40px;
+    background: #9eedff;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+ }
+ 
+
+ .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+   border: 1px solid #d3d3d3 !important;
+   background: #FFF !important;
+   color: #555555 !important;
+}

@@ -1,0 +1,13 @@
+.sidebar {
+    width: 250px;
+}
+.sidebar .nav-link {
+    color: #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+}
